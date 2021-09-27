@@ -1,0 +1,52 @@
+@keyframes heightAnimation
+  0%
+    height: 0
+  100%
+    height: 105%
+
+    
+.hamburger-line
+    height: 2px
+    background-color: #fff
+.trigger
+    display: none !important
+
+.burgeractivate
+    display: block
+    z-index: 999
+    width: 100%
+    animation: heightAnimation .2s ease
+    position: absolute
+    top: 0
+    right: 0
+    background-color: $gray
+
+.plusrotate
+    transform: rotate(45deg)
+
+.submitapp
+    display: flex
+    line-height: 2
+    margin-top: 10px
+.burger_menu
+    margin: 0 auto
+    max-width: 411px
+    &__li
+        padding: 15px
+        font-family: Poppins
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 10px
+        display: flex
+        align-items: center
+        text-align: center
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: #FFFFFF
+    &__ul
+        padding-top: 100px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center

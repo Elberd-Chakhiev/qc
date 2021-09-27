@@ -1,0 +1,898 @@
+$black: #000
+
+    
+=heading
+    
+    font-family: Poppins
+    font-style: normal
+    font-weight: 300
+    font-size: 33px
+    line-height: 40px
+    letter-spacing: -0.04em
+    color: #D9D9D9
+    opacity: 0.5
+    
+._anim-items_margin
+    transition: 1s
+    opacity: 0
+    margin-left: -360px 
+._anim-items_p
+    transition: 1s
+    opacity: 0
+    margin-left: -360px 
+
+._active
+    opacity: 1
+    margin: 0 0 0 20%
+._active2
+    opacity: 1
+    margin: 0
+
+
+
+// .night
+//     position: absolute
+//     top: 0
+//     left: 0
+//     height: 100%
+//     width: 100%
+//     background-position: center center
+//     background: url('../img/vectors_bg.jpg')
+//     background-size: cover
+
+// .day 
+//     z-index: 1
+//     position: absolute
+//     top: 0
+//     left: 0
+//     height: 100%
+//     width: 100%
+//     background-position: center center
+//     background: url('../img/vectors_bgbbefore.jpg')
+//     background-size: cover
+//     clip-path: circle(0 at 0 0)
+    
+
+
+// .container_foreffect
+    
+//     z-index: -1
+//     overflow: hidden
+//     height: 962px
+//     position: relative
+//     max-width: 1920px
+//     margin: 0 auto -962px auto
+
+
+
+.about
+    cursor: url('../img/Без имени-1.png')
+    margin: 0 auto
+    background-color: $black
+    // position: relative
+    
+    
+    &_wrapp
+        z-index: 1000
+        position: relative
+        // z-index: 99
+        overflow: hidden
+        padding: 87px 0 0 0
+        &__effect
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%  
+    &__h 
+        
+        // z-index: 300
+        // z-index: 1000 
+        transition: .5s
+        
+        padding: 0 0 53px 0
+        +heading
+    &__subtittle
+        margin-left: 3%
+        // z-index: 100
+        max-width: 46.625vw
+        font-family: Poppins
+        font-style: normal
+        font-weight: 500
+        font-size: 3.167vw
+        line-height: 68px
+        letter-spacing: -0.04em
+        color: #FFFFFF
+        &_blue
+            color: #64A8F8
+    &__p
+        margin-left: 3%
+        // z-index: 99
+        max-width: 662px
+        z-index: 10
+        font-family: Poppins
+        font-style: normal
+        font-weight: 500
+        font-size: 25px
+        line-height: 130%
+        letter-spacing: -0.04em
+        color: #D9D9D9
+
+
+
+.poset
+    background-size: cover
+    background-position: center center
+    background-image: url('../img/vectors.png')
+    position: relative
+.dd
+    // z-index: -1
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-size: cover
+    background-position: center center
+    background-image: url('../img/vectors_bgmask.png')
+    // position: relative
+
+@keyframes pulsar
+    0%
+        width: 200px
+        opacity: 0
+        filter: blur(500px) brightness(0%) contrast(0%) 
+        background: radial-gradient(#24baff88, #0000)
+    50%
+        
+        width: 270px
+        opacity: 1
+        filter: blur(100px) brightness(100%) contrast(400%) 
+        background: radial-gradient(#24baff88, #0000)
+    100%
+        
+        width: 200px
+        opacity: 0
+        filter: blur(60px) brightness(0%) contrast(0%) 
+        background: radial-gradient(#24baff88, #0000)
+
+
+@keyframes pulsar2
+    0%
+        opacity: 0
+        filter: blur(50px) brightness(0%) contrast(0%) 
+        background: radial-gradient(#00aeff57, #0000)
+    40%
+        
+        opacity: 1
+        filter: blur(10px) brightness(100%) contrast(400%) 
+        background: radial-gradient(#00aeff57, #0000)
+    70%
+        
+        opacity: 1
+        filter: blur(10px) brightness(100%) contrast(400%) 
+        background: radial-gradient(#00aeff57, #0000)
+    100%
+        
+        opacity: 0
+        filter: blur(50px) brightness(0%) contrast(0%) 
+        background: radial-gradient(#00aeff57, #0000)
+        
+@keyframes pulsar3
+    0%
+        // width: 270px
+        opacity: 0
+        filter: blur(500px) brightness(0%) contrast(0%) 
+        background: radial-gradient(#00aefffa, #0000)
+    50%
+        
+        // width: 300px
+        opacity: 1
+        filter: blur(10px) brightness(100%) contrast(400%) 
+        background: radial-gradient(#24baff, #0000)
+    100%
+        
+        // width: 270px
+        opacity: 0
+        filter: blur(60px) brightness(0%) contrast(0%) 
+        background: radial-gradient(#00aeff, #0000)
+
+
+.baaaall 
+    // z-index: -2
+    border-radius: 50%
+    margin: 23% auto auto 59%
+    animation: 20s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s normal none infinite running pulsar
+    // transform: rotate(90deg)
+    position: absolute
+    top: 0
+    left: 0
+    
+    
+    height: 300px
+.baaaall2 
+    // z-index: -2
+    border-radius: 50%
+    animation: 5s linear 0s normal none infinite running pulsar2
+    // transform: rotate(-41deg)
+    position: absolute
+    top: 0
+    right: 0
+    margin: 5% 5% auto auto
+    width: 100px
+    height: 100px
+
+
+.baaaall3
+    border-radius: 50%
+    margin: 5% auto auto 2%
+    // z-index: -2
+    animation: 7s linear 0s normal none infinite running pulsar3
+    // transform: rotate(-41deg)
+    position: absolute
+    top: 0
+    left: 0
+    width: 50px
+    height: 50px
+    
+    border-radius: 50%
+    transition-duration: .3s
+.baaaall:hover
+    filter: blur(300px) brightness(300%) contrast(600%)
+    background: radial-gradient(#00ffb3a4, #0000)
+.wrappeeer 
+    overflow: hidden
+
+    width: 98%
+    height: 100%
+// .wrappeeer2
+//     background-image: url('../img/vectors_bgmask.png')
+//     background-repeat: no-repeat
+//     background-size: cover
+//     overflow: hidden
+//     position: absolute
+//     top: 0
+//     left: 0
+//     width: 98%
+//     height: 100%
+//     z-index: -3
+
+
+
+// .baaaall
+
+
+.wrapp_about_p
+    
+    height: 352px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-top: 54px
+    padding-bottom: 68px
+
+.whatwedo
+    background-color: $black
+    &_wrapp
+        padding-top: 88px
+        // padding-bottom: 119px
+    &__h
+        padding-bottom: 29px 
+        +heading
+
+// .hide
+//     display: none
+
+.whatwedo
+    &_info
+        padding-top: 90px 
+        padding-bottom: 27px 
+        &_wrapp
+            max-width: 1920px
+            margin: 0 auto
+        &_items
+            margin-left: 27px
+            max-width: 1602px
+            display: flex
+            justify-content: space-between
+    &_item1
+        font-family: Poppins
+        font-style: normal
+        font-weight: 500
+        font-size: 80px
+        line-height: 68px
+        letter-spacing: -0.04em
+        color: #FFFFFF
+        opacity: 0.2 !important 
+    &_item2
+        z-index: 2
+        max-width: 453px
+        font-family: Poppins
+        font-style: normal
+        font-weight: 500
+        font-size: 80px
+        line-height: 68px
+        letter-spacing: -0.04em
+        color: #FFFFFF
+    &_item3
+        z-index: 2
+        &__p
+            max-width: 466px
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 33px
+            line-height: 40px
+            letter-spacing: -0.04em
+            color: #FFFFFF
+            transition: .5s
+        &__plus
+            display: flex
+            cursor: pointer
+            padding-top: 41px
+            padding-bottom: 32px
+            // max-width: 31px
+            position: relative
+            opacity: 1
+            transition: .5s
+        &__learn
+            opacity: 1
+            transition: .5s
+        &__a
+            cursor: pointer
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 130%
+            text-align: right
+            letter-spacing: -0.04em
+            color: #FFFFFF
+        &__b
+            display: none
+            cursor: pointer
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 130%
+            text-align: right
+            letter-spacing: -0.04em
+            color: #FFFFFF
+.beforeminus
+    width: 165px
+    transition: .5s
+
+=bgFix
+    position: relative
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    background-attachment: fixed
+    // box-shadow: inset 0em -1em 80px 20px #000
+.infobg1
+    background-image: url("../img/wwd_bgimg1.png")
+    +bgFix
+.infobg2
+    background-image: url("../img/wwd_bgimg2.png")
+    +bgFix
+.infobg3
+    background-image: url("../img/wwd_bgimg3.png")
+    +bgFix
+.infobg4
+    background-image: url("../img/wwd_bgimg4.png")
+    +bgFix
+.infobg1:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(#00000000, #000);
+    // z-index: 1
+.infobg2:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(#00000000, #000);
+    // z-index: 1
+.infobg3:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(#00000000, #000);
+    // z-index: 1
+.infobg4:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(#00000000, #000);
+    // z-index: 1
+
+.posit
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+
+// .wrapped_activies
+//     display: flex 
+//     flex-direction: column
+//     justify-content: space-between
+//     max-height: 605px
+//     background-image: url("../img/cristal.jpg")
+//     // background-size: cover
+//     background-repeat: no-repeat
+//     background-position: center center  
+
+
+// #world
+//     position: relative
+//     width: 100%
+//     height: 100vh
+    
+.activiesBg
+    box-shadow: inset 0px 0px 20px 20px #000
+    transform: scale(1.2)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.activities
+    position: relative
+    &_wrapp
+        padding-top: 119px
+    background-color: $black
+    &__h
+        padding-bottom: 45px
+        +heading
+    &_bgimg
+        box-shadow: inset 0px 0px 20px 20px #000
+        z-index: -1
+        overflow: hidden
+        position: relative
+        // max-width: 379px
+        height: 605px
+        margin: 0 auto
+        // background-image: url("../img/cristal.jpg")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+    &_text
+        width: 100%
+        position: relative
+        max-width: 1172px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        height: 520px
+        margin: -420px auto 0 auto
+        
+        &__title
+            // height: 100px
+            width: 100%
+            position: relative
+            transition: 2s
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 118px
+            line-height: 120px
+            text-align: center
+            letter-spacing: -0.04em
+            color: #FFFFFF
+        &__p
+            width: 100%
+            position: relative
+            transition: 2s
+            // margin-top: 86px
+            max-width: 1104px
+            font-family: Poppins
+            font-style: normal
+            font-weight: normal
+            font-size: 33px
+            line-height: 130%
+            text-align: center
+            letter-spacing: -0.04em
+            color: #FFFFFF
+        &_wrappul
+            width: 100%
+        &__ul
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 12px
+            margin-top: 20px 
+        &__a      
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 33px
+            line-height: 40px
+            
+            letter-spacing: -0.04em
+            color:  #FFFFFF
+            opacity: 0.6
+            transition: 2s
+.activities_text__a:hover
+    cursor: pointer
+    font-size: 48px
+    opacity: 1
+    color: #D9E4FF
+
+
+
+// .activities:before
+//     background: linear-gradient(#000000b6, #000000)
+//     position: absolute
+//     top: 0
+//     height: 0
+//     width: 100%
+//     height: 100%
+
+.opastrans
+    opacity: 0 
+    transition: .5s
+.opastrans2
+    opacity: 1
+    transition: 3s
+
+
+.wrapp_teamsliderr
+    max-width: 1920px
+    margin: 0 auto
+
+
+.stylesname
+    transition: .5s
+    font-family: Poppins
+    font-style: normal
+    font-weight: 500
+    font-size: 50px
+    line-height: 68px
+    letter-spacing: -0.04em
+    color: #FFFFFF
+.stylesname:hover
+    padding-left: 70px
+
+.team_slide__img__
+    width: 100%
+    height: 100%
+    position: relative
+.team
+    background-color: $black
+    margin: 0 auto
+    &_wrapp 
+    &__h
+        padding-top: calc(217px - 11px)
+        padding-bottom: 55px
+        +heading
+    &_slide
+        padding-bottom: 30px
+        display: flex
+        &__img
+            
+            width: 50%
+            height: auto
+            padding: 50px 20px 31px 0
+            margin: 0 0 0 114px
+            
+            
+
+
+
+
+
+
+            border-right: 1px solid #fff
+        &__names
+            // border: 1px solid blue
+            height: auto
+            max-width: 400px
+            margin-left: 39px
+        &__info
+            // border: 1px solid red
+            height: auto
+            width: 100%
+        &__p
+            
+            position: relative
+            // border: 1px solid blue
+            height: 310px
+            max-width: 100%
+    &_info 
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 331px
+        &__span
+            margin-left: 40px
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 60px
+            line-height: 68px
+            letter-spacing: -0.04em
+            color: #FFFFFF
+    &_secondinfo
+        margin-top: 41px
+        margin-left: 163px
+        max-width: 349px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        
+        &__title
+            margin-bottom: 15px
+            font-family: Poppins
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 130%
+            letter-spacing: -0.04em
+            color: #FFFFFF
+        &__subtitle
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 17px
+            line-height: 130%
+            letter-spacing: -0.04em
+            color: #D9D9D9
+
+.slide_p_wrapp
+    
+    flex-direction: column
+    max-width: 455px
+    // position: absolute
+    // top: 0 
+    // left: 0
+
+
+
+.fixml
+    margin-left: 170px
+
+// .team-slider:active 
+//     cursor: -webkit-grabbing
+//     cursor:    -moz-grabbing
+//     cursor:         grabbing
+// .team-slider
+//     cursor: move
+//     cursor: grab
+//     cursor: -moz-grab
+//     cursor: -webkit-grab
+//     position: relative
+//     z-index: 1
+//     overflow: hidden
+//     min-width: 0
+//     margin: 0 auto
+
+
+.news
+    margin: 0 auto
+    background-color: $black
+    &_wrapp
+    &__h
+        // padding-top: 240px 
+        padding-bottom: 5px
+        +heading
+
+    
+
+.news-slider__slide
+    max-width: 246px
+    height: 443px
+.swiper-slide-active
+    max-width: 290px 
+    height: 520px
+
+.news_slider__wrapp
+    
+    
+
+.swiper-button-prev
+    position: absolute
+.swiper-button-next
+    position: absolute
+.news_slider
+    &__wrapp
+        display: flex
+        align-items: center
+        min-width: 0 
+
+
+
+    
+
+  
+.contain
+    width: 100%
+    height: 100%
+
+$gray: #222222
+
+.news_absolute5
+    width: 100%
+    height: 341px
+    background-color: #00000000
+    position: absolute
+    bottom: 0
+    left: 0
+.news_absolute1
+    width: 100%
+    height: 341px
+    background-color: #00000000
+    position: absolute
+    top: 0
+    left: 0
+.news_absolute4
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    align-items: flex-end
+.news_absolute3
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    align-items: flex-start
+.parrr3
+    padding: 23px  23px 0 23px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.parrr4
+    padding: 0 23px 23px 23px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.parrr1
+    padding: 37px 23px 195px 23px 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.parrr
+    padding: 195px 23px 37px 23px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.titilesnews
+    font-family: Poppins
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 40px
+    letter-spacing: -0.04em
+    color: #FFFFFF
+
+.paragraheesnews
+    font-family: Poppins
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 130%
+    
+    letter-spacing: -0.04em
+    color: #FFFFFF
+
+
+
+.popup_bgcolornews
+    height: 130px
+    width: 100%
+    background-image: url('../img/photo_2021-08-16_14-22-51.png')
+    position: absolute
+    z-index: 0
+    top: 0
+    left: 0
+
+
+
+.popup
+    overflow-y: auto 
+    overflow-x: hidden 
+    z-index: 99999999999
+    position: fixed
+    width: 100%
+    height: 100%
+    
+    background-color: #00000044
+    top: 0
+    left: 0
+    opacity: 0
+    visibility: hidden
+    transition: all 0.3s ease 0s
+    &__body
+        min-height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 30px 10px
+    &_content
+        // background-image: url('../img/photo_2021-08-16_14-22-51.png')
+        // background-repeat: no-repeat
+        // background-size: cover
+        padding: 30px
+        max-width: 800px
+        background-color: $gray
+        color: #fff
+        position: relative
+        transition: all 0.3s ease 0s 
+        // opacity: 0
+        // transform: translate(0px, -100%)
+    &_title
+        position: relative
+        z-index: 3
+        margin: 0px 0px 2em 0px
+        font-family: Poppins
+        font-style: normal
+        font-weight: 500
+        font-size: 40px
+        line-height: 68px
+        letter-spacing: -0.04em
+        color: #FFFFFF
+
+    &_text
+        position: relative
+        z-index: 3
+        font-family: Poppins
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 40px
+        letter-spacing: -0.04em
+        color: #FFFFFF
+    &_close
+        // position: relative
+        z-index: 10
+        right: 30px
+        top: 30px
+        position: absolute
+        font-family: Poppins
+        font-style: normal
+        font-weight: 500
+        font-size: 30px
+        line-height: 40px
+        letter-spacing: -0.04em
+        color: #FFFFFF
+
+
+.popup_area
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    height: 0
+    
+.popup:target
+    opacity: 1
+    visibility: visible
+// .popup.open
+//     opacity: 1
+//     visibility: visible !important
+
+// .open2
+//     opacity: 1 !important
+//     transform: translate(0px, 0%) !important

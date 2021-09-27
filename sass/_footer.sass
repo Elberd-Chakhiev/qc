@@ -1,0 +1,283 @@
+.footer
+    background-color: $black
+    
+
+
+.contacts
+    &_wrapp
+    &__h
+        padding-bottom: 82px
+        padding-top: 52px
+        +heading
+    &_wrappform
+        // position: relative
+        max-width: 1627px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin: 0 auto
+        &_title
+            max-width: 572px
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 33px
+            line-height: 40px
+            letter-spacing: -0.04em
+            color: #FFFFFF
+            margin-bottom: calc(77px - 61px)
+        &_title
+        &_form
+            max-width: 35%
+            justify-items: flex-end
+        &__img
+            // position: absolute
+            // top: -120px 
+            // left: 0
+            // border: 1px solid #f00909
+            height: 680px
+            overflow: hidden
+            // border-radius: 50%
+            // animation: 10s linear 0s normal none infinite running rot;
+            // -webkit-animation: 10s linear 0s normal none infinite running rot;
+            // padding: 80px
+            // background-image: url('../img/1.png')
+            background-repeat: no-repeat
+            background-position: center center
+            display: flex
+            justify-content: center
+            align-items: center
+            max-width: 792px
+
+@keyframes rot 
+    0%
+         transform: rotate(0deg)
+    100%
+         transform: rotate(360deg)
+@keyframes rot2 
+    0%
+         transform: rotate(0deg)
+    100%
+         transform: rotate(360deg)
+@keyframes rot3 
+    0%
+         transform: rotate(0deg)
+    100%
+         transform: rotate(-360deg)
+@keyframes fiexearh 
+    0%
+         transform: rotate(0deg)
+    100%
+         transform: rotate(360deg)
+
+.matre1
+    animation: 100s linear 0s normal none infinite running rot
+    -webkit-animation: 100s linear 0s normal none infinite running rot
+
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 90%
+    height: 90%
+
+.matre1:before
+    position: absolute
+    right: 0
+    top: 225px
+    content: ' '
+    border: 1px solid white
+    min-width: 15px
+    min-height: 15px
+    background: #ffffff
+    border-radius: 50%
+.matre2
+    animation: 50s linear 0s normal none infinite running rot2
+    -webkit-animation: 50s linear 0s normal none infinite running rot2
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 89%
+    height: 89%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.matre2:before
+    position: absolute
+    right: 0
+    top: 195px
+    content: ' '
+    border: 1px solid #A1E3E3
+    min-width: 15px
+    min-height: 15px
+    background: #A1E3E3
+    border-radius: 50%
+.matre3
+    animation: 25s linear 0s normal none infinite running rot3
+    -webkit-animation: 25s linear 0s normal none infinite running rot3
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 88%
+    height: 88%
+
+.matre3:before
+    position: absolute
+    right: 0
+    top: 154px
+    content: ' '
+    border: 1px solid white
+    min-width: 15px
+    min-height: 15px
+    background: #ffffff
+    border-radius: 50%
+
+
+    // margin-right: 5px
+
+.bdmatre
+    border-radius: 50%
+    border: 1px solid white
+
+.earhh
+    animation: 100s linear 0s normal none infinite running fiexearh
+    -webkit-animation: 100s linear 0s normal none infinite running fiexearh
+    display: block
+    margin: 5px
+
+// .earhh
+//     animation: 10s linear 0s normal none infinite running rot2;
+//     -webkit-animation: 10s linear 0s normal none infinite running rot2;
+
+
+
+.form
+    &_last
+        align-items: baseline
+        display: flex
+        justify-content: space-between
+    &_privacy
+        &__a
+            font-family: Poppins
+            text-decoration: underline
+            font-style: normal
+            font-weight: 500
+            font-size: 10px
+            line-height: 10px
+            display: flex
+            align-items: center
+            text-align: center
+            letter-spacing: 0.04em
+            text-decoration-line: underline
+            text-transform: uppercase
+            color: #FFFFFF
+    &_submit
+    &_input
+        // width: 80%
+        border-bottom: 1px solid #FFFFFF
+        opacity: 0.5
+        padding: 61px 10px 3.5px 10px 
+        &__t
+            background-color: #ffffff00
+            font-family: Poppins
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 36px
+            letter-spacing: -0.02em
+            color: #FFFFFF
+            opacity: 0.5
+            width: 100%
+
+
+.submit__a  
+    background-color: #ffffff00
+    font-family: Poppins
+    font-style: normal
+    font-weight: 500
+    font-size: 33px
+    line-height: 40px
+    letter-spacing: -0.04em
+    color: #ffffff
+    mix-blend-mode: normal
+
+
+.map
+    &_wrapp
+        height: 960px
+        position: relative
+    &_adress
+        position: absolute
+        left: 0
+        bottom: 0
+        
+        z-index: 100
+        
+        background-color: #fff
+        &_wrapp
+            height: 479px
+            padding: 20px 14px 99px 17px
+        &_citys
+            width: 456px
+            display: flex
+            justify-content: space-between
+        &__moscow
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 130%
+            letter-spacing: -0.04em
+            color: rgba(15, 15, 15, 0.4)
+            mix-blend-mode: luminosity
+        &__london
+            font-family: Poppins
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 130%
+            text-align: right
+            letter-spacing: -0.04em
+            color: #0F0F0F
+        &_info
+            height: 409px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+    &_info
+        &_d
+            margin-top: 44px
+
+
+.gostspan
+    font-family: Poppins
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 10px
+    display: flex
+    align-items: center
+    text-align: center
+    letter-spacing: 0.04em
+    color: #0F0F0F
+    opacity: 0.5
+    margin-bottom: 10px
+
+.boldspan
+    font-family: Poppins
+    font-style: normal
+    font-weight: 500
+    font-size: 33px
+    line-height: 40px
+    letter-spacing: -0.04em
+    color: #0F0F0F
+    max-width: 458px
+
+
+
+.maaaap
+    width: 100%
+    height: 100%
